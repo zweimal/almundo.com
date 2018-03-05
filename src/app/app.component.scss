@@ -1,0 +1,19 @@
+@import '../styles/colors';
+
+.navbar {
+    background-color: $am-blue;
+}
+
+.logo {
+    height: 48px;
+    @media (max-width: 768px) {
+        height: 24px;
+    }
+}
+
+.main-container {
+    padding-top: 74px;
+    @media (max-width: 768px) {
+        padding-top: 56px;
+    }
+}
