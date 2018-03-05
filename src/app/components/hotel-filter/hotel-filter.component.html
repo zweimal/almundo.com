@@ -4,11 +4,11 @@
 			<strong class="d-none d-md-inline-block">Filtros</strong>
 			<span class="d-md-none text-light-blue">
 				<strong>Filtrar</strong>
-				<span class="fa fa-chevron-down" *ngIf="!isCollapsed"></span>
-				<span class="fa fa-chevron-up" *ngIf="isCollapsed"></span>
+				<span class="fa fa-chevron-down" *ngIf="isCollapsed"></span>
+				<span class="fa fa-chevron-up" *ngIf="!isCollapsed"></span>
 			</span>
 		</div>
-		<div class="w-100 collapse d-md-block" [class.show]="isCollapsed">
+		<div class="w-100 collapse d-md-block" [class.show]="!isCollapsed">
 			<form class="w-100" [formGroup]="hotelForm" novalidate>
 				<div class="filter-group px-3 py-3 py-md-2">
 					<label class="text-light-blue py-2">
