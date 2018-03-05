@@ -5,28 +5,28 @@ This is a MEAN.JS full-stack project (with Angular 5 instead of Angular.js).
 It uses Typescript for type-checking at both ends and Jasmine for testing (Karma and Protractor tools)
 
 ## Requirements
-    - [NodeJS](https://nodejs.org) version 6.2+
-    - [Yarn](https://yarnpkg.com) version 1.5.1+
-    - [Angular CLI](https://github.com/angular/angular-cli) version 1.7.1
-    - [MongoDB](https://docs.mongodb.com/) version 3.6.2, including `mongoimport`
+- [NodeJS](https://nodejs.org) version 6.2+
+- [Yarn](https://yarnpkg.com) version 1.5.1+
+- [Angular CLI](https://github.com/angular/angular-cli) version 1.7.1
+- [MongoDB](https://docs.mongodb.com/) version 3.6.2, including `mongoimport`
 
 ## Installation
-    1. Clone it from from Github
-    ```
-    $ git clone git@github.com:zweimal/almundo.com.git
-    ```
-    2. Move to the new directory
-    ```
-    $ cd almundo.com
-    ```
-    3. Install dependencies
-    ```
-    $ yarn install
-    ```
-    4. Populate the database
-    ```
-    $ yarn db:seed
-    ```
+1. Clone it from from Github
+```
+$ git clone git@github.com:zweimal/almundo.com.git
+```
+2. Move to the new directory
+```
+$ cd almundo.com
+```
+3. Install dependencies
+```
+$ yarn install
+```
+4. Populate the database
+```
+$ yarn db:seed
+```
 
 ## Development server
 
