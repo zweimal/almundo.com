@@ -1,0 +1,43 @@
+<div class="flex-md-column row pl-md-3">
+	<div class="card w-100 rounded">
+		<div class="filter-group title text-center text-md-left px-3 py-2" (click)="isCollapsed = !isCollapsed">
+			<strong class="d-none d-md-inline-block">Filtros</strong>
+			<span class="d-md-none text-light-blue">
+				<strong>Filtrar</strong>
+				<span class="fa fa-chevron-down" *ngIf="!isCollapsed"></span>
+				<span class="fa fa-chevron-up" *ngIf="isCollapsed"></span>
+			</span>
+		</div>
+		<div class="w-100 collapse d-md-block" [class.show]="isCollapsed">
+			<form class="w-100" [formGroup]="hotelForm" novalidate>
+				<div class="filter-group px-3 py-3 py-md-2">
+					<label class="text-light-blue py-2">
+						<svg-icon src="assets/icons/filters/search.svg" class="fill-light-blue icon mr-1"></svg-icon>
+						<strong class="valign-top">Nombre del hotel</strong>
+					</label>
+					<div class="input-group">
+						<input type="text" class="form-control" formControlName="name">
+						<div class="input-group-append">
+							<button class="btn btn-primary" type="button" (click)="onClickAcceptButton()">Aceptar</button>
+						</div>
+					</div>
+				</div>
+				<div class="filter-group px-3 py-3 py-md-2" formGroupName="stars">
+					<label class="text-light-blue py-2">
+						<svg-icon src="assets/icons/filters/star.svg" class="fill-light-blue icon mr-1"></svg-icon>
+						<strong class="valign-top">Estrellas</strong>
+					</label>
+					<div class="mb-2 stars">
+						<input type="checkbox" class="mr-1" formControlName="any" />
+						<strong>Todas las estrellas</strong>
+					</div>
+					<div class="mb-2 stars" *ngFor="let s of starsOptions">
+						<input type="checkbox" class="mr-1" [formControlName]="s" />
+						<am-stars [score]="s"></am-stars>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+</div>

@@ -1,0 +1,35 @@
+@import '../../../styles/colors';
+
+@media (max-width: 768px) {
+    .card {
+        border: none;
+        border-radius: 0;
+    }
+}
+
+.filter-group {
+    border-bottom: 4px solid $am-light-grey;
+    font-size: .9rem;
+}
+
+.form-control, button {
+    font-size: .9rem;
+}
+
+.title {
+    font-size: 1rem;
+}
+
+.icon {
+    margin-top: 2px;
+    width: 1rem;
+    height: 1rem;
+}
+
+input[type="checkbox"] {
+    vertical-align: text-top;
+}
+
+.stars {
+    font-size: .75rem;
+}

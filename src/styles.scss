@@ -9,3 +9,24 @@ body, html {
 body {
     background-color: $main-bg-color;
 }
+
+.btn-primary {
+    background-color: $am-blue;
+    border-color: $am-blue;
+}
+
+.text-light-blue {
+    color: $am-light-blue;
+}
+
+.fill-light-blue {
+    fill: $am-light-blue;
+}
+
+.fill-yellow {
+    fill: $am-yellow;
+}
+
+.valign-top {
+    vertical-align: top;
+}
