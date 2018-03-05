@@ -11,13 +11,19 @@ import { HotelFilterComponent } from './components/hotel-filter/hotel-filter.com
 import { HotelListComponent } from './pages/hotels/list/hotel-list.component';
 import { HotelService } from './services/hotel.service';
 import { StarsComponent } from './components/stars/stars.component';
+import { HotelListItemComponent } from './components/hotel-list-item/hotel-list-item.component';
+import { AmenitiesComponent } from './components/amenities/amenities.component';
+import { HotelPriceComponent } from './components/hotel-price/hotel-price.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HotelFilterComponent,
     HotelListComponent,
-    StarsComponent
+    StarsComponent,
+    HotelListItemComponent,
+    AmenitiesComponent,
+    HotelPriceComponent
   ],
   imports: [
     AppRoutingModule,

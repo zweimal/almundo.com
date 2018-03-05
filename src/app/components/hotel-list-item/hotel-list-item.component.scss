@@ -1,0 +1,18 @@
+@import '../../../styles/colors';
+
+.image {
+    height: 192px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.price-column {
+    border-top: 1px dashed $am-dark-grey;
+    @media (min-width: 765px) {
+        & {
+            border-top: transparent;
+            border-left: 1px dashed $am-grey;
+        }
+    }
+}

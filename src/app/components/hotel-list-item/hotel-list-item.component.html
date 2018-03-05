@@ -1,0 +1,21 @@
+<div class="card px-2 py-2 mb-2 mb-md-3" *ngIf="hotel">
+	<div class="row card-block mx-0">
+		<div class="col-md-4 px-0">
+			<div class="image rounded" [style.background-image]="'url(assets/images/hotels/' + hotel.image + ')'"></div>
+		</div>
+		<div class="col-md-5 px-0 px-md-3 py-2 py-md-0">
+			<div class="text-light-blue pb-2 pb-md-0">
+				<strong>{{hotel.name}}</strong>
+			</div>
+			<div>
+				<am-stars [score]="hotel.stars" type="medium"></am-stars>
+			</div>
+			<div class="mb-3">
+				<am-amenities [values]="hotel.amenities"></am-amenities>
+			</div>
+		</div>
+		<div class="col-md-3 px-0 pl-md-4 pr-md-3 pt-2 pb-4 py-md-4 price-column">
+			<am-hotel-price [hotel]="hotel"></am-hotel-price>
+		</div>
+	</div>
+</div>

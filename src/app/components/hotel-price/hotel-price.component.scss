@@ -1,0 +1,28 @@
+@import '../../../styles/colors';
+
+:host {
+  text-align: center;
+}
+
+.price-text span {
+  font-size: 11px;
+}
+
+.price {
+  color: $am-orange;
+  font-size: 36px;
+  margin: 5px;
+}
+
+.currency {
+  font-size: 24px;
+  line-height: 1;
+  vertical-align: middle;
+  margin: -5px -5px 0 0;
+  display: inline-block;
+}
+
+.btn-primary {
+  background-color: $am-blue;
+  width: 100%;
+}
